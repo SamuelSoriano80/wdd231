@@ -20,6 +20,15 @@ header {
     margin-right: 10px;
 }
 
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -119,8 +128,28 @@ footer {
         flex-direction: column;
     }
 
+    .hamburger {
+        display: block;
+    }
+
     nav ul {
         flex-direction: column;
         text-align: center;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    nav.open ul li {
+        padding: 10px;
+    }
+
+    nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+
+    nav.open {
+        grid-template-rows: 1fr;
     }
 }

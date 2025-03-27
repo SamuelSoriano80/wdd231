@@ -1,0 +1,28 @@
+{
+    "family_name": "Soriano",
+    "date_moved_in": "2025-03-15",
+    "number_of_members": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Juan Soriano",
+            "gender": "Male",
+            "birthdate": "1985-06-22"
+        },
+        {
+            "name": "Claudia Soriano",
+            "gender": "Female",
+            "birthdate": "1987-09-10"
+        },
+        {
+            "name": "Cristina Soriano",
+            "gender": "Female",
+            "birthdate": "2012-04-05"
+        },
+        {
+            "name": "Kim Soriano",
+            "gender": "Male",
+            "birthdate": "2015-08-30"
+        }
+    ]
+}

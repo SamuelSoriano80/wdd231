@@ -35,4 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.filterCourses = displayCourses;
     displayCourses('all');
+
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("animateme");
+
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+        hamburger.classList.toggle("open");
+    });
 });
