@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Timbuktu Coffee Co.",
+            "address": "123 Main St, Timbuktu",
+            "phone": "(123) 456-7890",
+            "website": "https://timbuktucoffee.com",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG",
+            "membership": 3
+        },
+        {
+            "name": "Desert Tech Solutions",
+            "address": "456 Innovation Rd, Timbuktu",
+            "phone": "(987) 654-3210",
+            "website": "https://deserttech.com",
+            "image": "https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Oasis Travel Agency",
+            "address": "789 Explorer Ave, Timbuktu",
+            "phone": "(555) 123-4567",
+            "website": "https://oasistravel.com",
+            "image": "https://media.licdn.com/dms/image/v2/C4D1BAQGGdNo6IlDOCQ/company-background_10000/company-background_10000/0/1583275772247?e=2147483647&v=beta&t=0yAsb6yVkN7iA8AU5_19aelUe8XoEpckJ4tdFI3m7xY",
+            "membership": 1
+        },
+        {
+            "name": "Nomad Fashion",
+            "address": "321 Boutique St, Timbuktu",
+            "phone": "(222) 333-4444",
+            "website": "https://nomadfashion.com",
+            "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F827052679%2F1062058882043%2F1%2Foriginal.20240814-173249?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C62%2C1576%2C788&s=1598f3849f58cc88c0457a8c10e9764a",
+            "membership": 3
+        },
+        {
+            "name": "Golden Sands Resort",
+            "address": "567 Beachside Dr, Timbuktu",
+            "phone": "(888) 999-0000",
+            "website": "https://goldensands.com",
+            "image": "https://www.kayak.com.mx/rimg/kimg/d1/0f/4d982a81-60c92a53-0.jpeg?width=1366&height=768&crop=true",
+            "membership": 2
+        },
+        {
+            "name": "Savannah Bookstore",
+            "address": "789 Literature Ln, Timbuktu",
+            "phone": "(444) 555-6666",
+            "website": "https://savannahbooks.com",
+            "image": "https://www.fodors.com/wp-content/uploads/2022/05/1-BOOKSTORES-BAM_credit_DavidLand_08.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Caravan Auto Repairs",
+            "address": "159 Mechanic St, Timbuktu",
+            "phone": "(777) 888-9999",
+            "website": "https://caravanauto.com",
+            "image": "https://www.autotrainingcentre.com/wp-content/uploads/2014/02/Automotive-training.jpg",
+            "membership": 3
+        }
+    ]
+}
