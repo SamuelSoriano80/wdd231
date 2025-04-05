@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page of the Timbuktu Chamber of Commerce">
+    <meta name="author" content="Samuel Soriano">
+    <meta property="og:title" content="Chamber Directory | Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.worldatlas.com/r/w1200/upload/4d/82/37/timbuktu.jpg">
+    <meta property="og:url" content="https://samuelsoriano80.github.io/wdd231/chamber/index.html">
+    <title>Timbuktu Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/index.css">
+    <script defer src="scripts/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/timbuktu_flag.jpg" alt="timbuktu flag" width="100">
+        <h1>Timbuktu Chamber of Commerce</h1>
+        <button class="hamburger" id="hamburger"> &#9776; </button>
+        <nav class="animateme" id="animateme">
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/Timbuktu_banner.jpg" alt="Timbuktu vacation destination">
+            <a href="join-chamber.html" class="cta-link">Join the Chamber</a>
+        </div>
+
+        <section id="current">
+            <div id="current-events">
+                <h2>Current Events</h2>
+                <p>Event 1: Description...</p>
+                <p>Event 2: Description...</p>
+            </div>
+
+            <div id="weather">
+                <div id="current-weather">
+                    <h2>Current Weather</h2>
+                    <img id="weather-icon" src="https://openweathermap.org/img/w/02n.png" alt="cloudy day">
+                    <p id="weather-description"></p>
+                    <p id="current-temp"></p>
+                </div>
+                <div id="weather-forecast>">
+                    <h2>Weather Forecast</h2>
+                    <p id="forecast2"></p>
+                    <p id="forecast3"></p>
+                    <p id="forecast1"></p>
+                </div>
+            </div>
+        </section>
+
+        <div id="directory"></div>
+    </main>
+    <footer>
+        <div>
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>123 Commerce St.</p>
+            <p>Timbuktu, TK 56789</p>
+            <p>Email: contact@timbuktuchamber.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div>
+            <a href="#" class="social-button"><img src="images/youtube.webp" alt="Youtube logo" width="50"></a>
+            <a href="#" class="social-button"><img src="images/twitter.webp" alt="Twitter logo" width="50"></a>
+            <a href="#" class="social-button"><img src="images/linkedin.png" alt="LinkedIn logo" width="50"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Samuel Soriano</p>
+            <p>&copy; 2025 Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
