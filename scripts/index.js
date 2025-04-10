@@ -4,16 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("lastModified").textContent = "Last updated: " + document.lastModified;
 
     const courses = [
-        { subject: 'CSE', number: 110, title: 'Introduction to Programming', credits: 2, completed: true },
-        { subject: 'WDD', number: 130, title: 'Web Fundamentals', credits: 2, completed: true },
-        { subject: 'CSE', number: 111, title: 'Programming with Functions', credits: 2, completed: true },
-        { subject: 'CSE', number: 210, title: 'Programming with Classes', credits: 2, completed: true },
-        { subject: 'WDD', number: 131, title: 'Dynamic Web Fundamentals', credits: 2, completed: true },
-        { subject: 'WDD', number: 231, title: 'Frontend Web Development I', credits: 2, completed: false }
+        {
+            subject: 'CSE', number: 110, title: 'Introduction to Programming', credits: 2, completed: true, certificate: 'Yes', description: 'An intro course.', technology: []
+        },
+        { subject: 'WDD', number: 130, title: 'Web Fundamentals', credits: 2, completed: true, certificate: 'Yes', description: 'An intro course.', technology: [] },
+        { subject: 'CSE', number: 111, title: 'Programming with Functions', credits: 2, completed: true, certificate: 'Yes', description: 'An intro course.', technology: [] },
+        { subject: 'CSE', number: 210, title: 'Programming with Classes', credits: 2, completed: true, certificate: 'Yes', description: 'An intro course.', technology: [] },
+        { subject: 'WDD', number: 131, title: 'Dynamic Web Fundamentals', credits: 2, completed: true, certificate: 'Yes', description: 'An intro course.', technology: [] },
+        { subject: 'WDD', number: 231, title: 'Frontend Web Development I', credits: 2, completed: false, certificate: 'Yes', description: 'An intro course.', technology: [] }
     ];
 
     const courseContainer = document.getElementById("course-container");
     const totalCredits = document.getElementById("total-credits");
+    const courseDetails = document.getElementById("course-details");
 
     function displayCourses(filter) {
         courseContainer.innerHTML = "";
@@ -28,6 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (course.completed) {
                 courseElement.classList.add("completed");
             }
+            courseElement.addEventListener('click', () => {
+                displayCourseDetails(course);
+            });
             courseContainer.appendChild(courseElement);
         });
         totalCredits.textContent = total;
@@ -43,4 +49,24 @@ document.addEventListener("DOMContentLoaded", () => {
         navMenu.classList.toggle("open");
         hamburger.classList.toggle("open");
     });
+
+    function displayCourseDetails(course) {
+        courseDetails.innerHTML = '';
+        courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+        courseDetails.showModal();
+
+        const closeModal = document.getElementById("closeModal");
+
+        closeModal.addEventListener("click", () => {
+            courseDetails.close();
+        });
+    }
 });
