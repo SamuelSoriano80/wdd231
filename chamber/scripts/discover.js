@@ -7,43 +7,57 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector('#cards-container');
 
     places.forEach(place => {
-        // Create card container
         const card = document.createElement('div');
         card.classList.add('card');
 
-        // Title
         const title = document.createElement('h2');
         title.textContent = place.name;
 
-        // Image
         const figure = document.createElement('figure');
         const img = document.createElement('img');
         img.src = place.image;
         img.alt = place.name;
         figure.appendChild(img);
 
-        // Address
         const address = document.createElement('address');
         address.textContent = place.address;
 
-        // Description
         const desc = document.createElement('p');
         desc.textContent = place.description;
 
-        // Button
         const button = document.createElement('button');
         button.textContent = 'Learn More';
 
-        // Append elements to card
         card.appendChild(title);
         card.appendChild(figure);
         card.appendChild(address);
         card.appendChild(desc);
         card.appendChild(button);
 
-        // Append card to container
         container.appendChild(card);
     });
+
+    const visitMessage = document.getElementById("visit-message");
+    const lastVisit = localStorage.getItem("lastVisit");
+    const currentVisit = Date.now();
+
+    if (!lastVisit) {
+        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const lastVisitTime = Number(lastVisit);
+        const timeDiff = currentVisit - lastVisitTime;
+        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); // ms to days
+
+        if (daysDiff < 1) {
+            visitMessage.textContent = "Back so soon! Awesome!";
+        } else if (daysDiff === 1) {
+            visitMessage.textContent = "You last visited 1 day ago.";
+        } else {
+            visitMessage.textContent = `You last visited ${daysDiff} days ago.`;
+        }
+    }
+
+    localStorage.setItem("lastVisit", currentVisit);
 
     const hamburger = document.getElementById("hamburger");
     const navMenu = document.getElementById("animateme");
