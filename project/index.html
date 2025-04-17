@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackFlix | Home</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/index.js" defer></script>
+
+    <meta property="og:title" content="TrackFlix">
+    <meta property="og:description"
+        content="TrackFlix helps you explore movie recommendations based on your interests.">
+    <meta property="og:image"
+        content="https://cdn.designcrowd.com/blog/2018/March/50-Typographic-Oscars-Film-Posters/GR_Typographic-Oscar-Film-Posters_Banner_828x300.jpg">
+    <meta property="og:url" content="https://samuelsoriano80.github.io/wdd231/project/index.html">
+</head>
+
+<body>
+    <header>
+        <h1>TrackFlix</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="watchlist.html">Watchlist</a>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <img loading="lazy" src="images/movie-banner.webp" alt="Movie Banner">
+        <input type="text" id="searchInput" placeholder="Search for a movie...">
+        <button onclick="searchMovie()">Search</button>
+    </div>
+
+    <div id="searchResults" class="search-results"></div>
+
+    <main class="info-sections">
+        <section class="purpose">
+            <h2>About TrackFlix</h2>
+            <p>TrackFlix helps you explore movie recommendations based on your interests. Whether you're in the mood for
+                a classic, a thriller, or something totally new, we've got you covered.</p>
+        </section>
+
+        <section class="how-to-use">
+            <h2>How to Use</h2>
+            <p>Type a movie title in the search bar above and hit search. We'll fetch details using the OMDb API. You
+                can also browse the Discover page or save favorites to your Watchlist.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Samuel Soriano, Mexico</p>
+        <p id="lastModified"></p>
+        <a href="attributions.html">Attrubutions</a>
+    </footer>
+</body>
+
+</html>
