@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         const lastVisitTime = Number(lastVisit);
         const timeDiff = currentVisit - lastVisitTime;
-        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); // ms to days
+        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
         if (daysDiff < 1) {
             visitMessage.textContent = "Back so soon! Awesome!";
