@@ -1,0 +1,76 @@
+:root {
+    --primary: #1C1C2D;
+    --secondary: #7C091E;
+    --accent1: #F4F4F9;
+    --accent2: #2C2C2C;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--accent1);
+    color: var(--accent2);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--primary);
+}
+
+header,
+footer {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+a,
+strong {
+    color: var(--secondary);
+}
+
+section {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+#primary {
+    background-color: var(--primary);
+    width: 50px;
+    height: 50px;
+}
+
+#secondary {
+    background-color: var(--secondary);
+    width: 50px;
+    height: 50px;
+}
+
+#accent1 {
+    background-color: var(--accent1);
+    width: 50px;
+    height: 50px;
+}
+
+#accent2 {
+    background-color: var(--accent2);
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    font-size: 0.9rem;
+}
